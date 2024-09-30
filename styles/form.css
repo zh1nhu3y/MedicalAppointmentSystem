@@ -1,0 +1,298 @@
+/* css for Forms (login, signup, appointment form) */
+
+/* login css */
+.login-cont {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/loginbg.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.login-box {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 45px;
+    width: 375px;
+    max-width: 95%;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 480px) {
+    .login-box {
+        padding: 75px 25px;
+    }
+}
+.login-box h1 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 1;
+}
+.login-box form div {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid gray;
+}
+.login-box form div:hover {
+    border-bottom-color: orange;
+}
+.login-box form div:first-of-type {
+    margin-bottom: 35px;
+}
+.login-box form div i {
+    font-size: 15px;
+    padding: 0px 10px;
+    color: gray;
+}
+.login-box div:hover i {
+    color: orange;
+}
+.login-box div input {
+    font-size: 12px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    min-width: 0;
+    flex: 1;
+}
+form input::placeholder {
+    opacity: 1;
+    color: gray;
+    font-size: 12px;
+}
+.login-box a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+.login-box a:hover {
+    color: orange
+}
+.login-box form .forget {
+    margin-top: 15px;
+    float: right;
+}
+.login-box form input[type="submit"] {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px;
+}
+.login-box form input[type="submit"]:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+.login-box .signup {
+    font-size: 14px;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* signup css */
+.signup-cont {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/loginbg.jpg);
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.signup-box {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 45px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+.signup-box h1 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.signup-box form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0 10px 0;
+}
+.signup-box form .user-details .input-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+/* .user-details .input-box label,
+.user-details .address label,
+.user-details .gender */
+label { 
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.input-box input,
+.address input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+/* .signup-box  */
+form input::placeholder {
+    opacity: 1;
+    color: gray;
+    font-size: 12px;
+}
+.signup-box input:hover, .signup-box input:focus {
+    border-bottom-color: orange;
+}
+.user-details .gender {
+    margin-right: 430px;
+}
+.user-details .gender .category {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 15px; 
+} 
+.user-details .gender input[type="radio"] {
+    margin: 10px;
+}
+.signup-box form .user-details .address {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+
+.signup-box form input[type="submit"] {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 90%;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px;
+}
+.signup-box form input[type="submit"]:hover {
+    background-color: coral;
+    cursor: pointer;
+}
+.signup-box .signup {
+    width: 300px;
+    margin-top: 25px;
+    text-align: center;
+    text-transform: uppercase;
+} 
+#message1, #message2 {
+    font-size: 13px;
+}
+
+/* apptForm css */
+.form-box {
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 40px 80px;
+    width: 65%;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+.form-box h1, .form-box h3 {
+    margin-left: 45px;
+}
+.form-box h1 {
+    color: #063970;
+    font-size: 35px;
+    font-weight: 800;
+}
+.form-box h3 {
+    color: #6C98C6;
+    font-size: 25px;
+    font-weight: 800;
+}
+.form-box form .form-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0 10px 0;
+}
+.form-box .input-box, .form-box .select-input {
+    width: calc(100% / 2 - 60px);
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+.form-box .select-input{
+    width: calc(100% / 2 - 80px);
+    margin-bottom: 20px;
+    padding: 0px 30px;
+}
+.form-box .select-input-1 {
+    margin-top: 20px;
+    width: 50px;
+}
+/* label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+} */
+.form-box .input-box input,
+.form-box .select-input .select {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #44bcd8;
+}
+.form-box input:hover, .form-box input:focus,
+.form-box .select:hover, .form-box .select:focus {
+    border-bottom-color: #063970;
+}
+.form-box .submit {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #44bcd8;
+    color: white;
+    border: none;
+    width: 90%;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px;
+}
+.form-box .submit:hover, .form-box .next:hover {
+    background-color: #76b5c5;
+    cursor: pointer;
+}
+.form-box .next {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #44bcd8;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 250px;
+}
+.form-box span {
+    margin-top: 20px;
+}

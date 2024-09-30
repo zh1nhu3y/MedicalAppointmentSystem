@@ -1,0 +1,183 @@
+/* css for Main Page (Our Doctor page, About Us page, Make Appointment page) */
+
+/* Our Doctors page */
+.doctor {
+    background-color: #E8DDCD;
+    width: 900px;
+    height: 260px;
+    margin: 40px 310px;
+    border-radius: 10px;
+    position: relative;
+    transition: height 0.5s ease;
+}
+.doctor.open-table {
+    height: 500px;
+}
+.doctorsImg {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    padding: 20px 20px;
+    margin-left: 50px;
+}
+.doctor p, .doctor h3 {
+    position: absolute;
+    margin-left: 380px;
+}
+.doctor h3 {
+    margin-top: -210px;
+}
+.doctor p {
+    margin-top: -170px;
+}
+.btnDoctor {
+    position: absolute;
+    margin-left: 68px;
+    margin-top: 190px;
+    border: none;
+    padding: 8px 18px;
+    background: whitesmoke;
+    color: #9C765D;
+}
+.btnDoctor:hover {
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #9C765D;
+}
+.table{
+    max-height: 0px;
+    overflow: hidden;
+    width: 900px;
+    margin-top: 40px;
+    transition: max-height 0.3s ease;
+}
+.table.open-table {
+    max-height: 400px;
+}
+table {
+    width: 500px;
+    margin: auto;
+    border-collapse: collapse;
+    /* border-spacing: 0; */
+    /* border-radius: 12px 12px 0 0; */
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32,32,32,.3);
+    background: #fafafa;
+    text-align: center;
+}
+th,td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+th {
+    background: #9C765D;
+    color: #fafafa;
+    text-transform: uppercase;
+}
+
+/* About Us page */
+.history {
+    padding: 50px 300px;
+}
+.history h2 {
+    border-bottom: 3px solid #9DD6DF;
+    width: 120px;
+    text-transform: uppercase;
+    font-size: 26px;;
+    margin-left: 400px;
+}
+.history p {
+    text-align: center;
+    font-size: 17px;
+}
+.aboutUs-row {
+    float:left;
+    width: 33.33%;
+    height: 380px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+#vision, #mission, #contactUs {
+    box-sizing: border-box;
+    padding: 45px 70px;
+    color: #3A3B3C;
+    text-align: center;
+}
+#vision {
+    background-color: #9DD6DF;
+}
+#mission {
+    background-color:#FCDDB0;
+}
+#contactUs {
+    width: 33.33%;
+    height: 430px;
+    float: left;
+    background-color: #EAE0DA;
+}
+#aboutUs-img {
+    width: 66.67%;
+    height: 430px;
+    float: right;
+}
+
+/* Make Appointment Page */
+h2, h3 {
+    text-align: center;
+}
+.section-1 img {
+    width: 340px;
+    height: 210px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.section-1 {
+    box-sizing: border-box;
+    padding: 30px 0px;
+    margin: 0px 30px;
+}
+.row-1, .row-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+.row-2 {
+    margin: 60px 220px;
+}
+.section-1 h3 {
+    position: absolute;
+    width: 340px;
+    height: 75px;
+    margin-top: -78px;
+    background-color: #E8DDCD;
+    box-sizing: border-box;
+    padding: 25px 0px;
+    /* z-index: -1; */
+    color: #373737; 
+    transition: all 0.3s ease;
+}
+.section-1 h2::before {
+    content: '';
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 45px;
+    background-color: #9C765D;
+    height: 3px;
+    box-sizing: border-box;
+    width: 150px;
+}
+.section-1 a:hover h3 {
+    background-color: rgba(232, 221, 205, 0.7); 
+    /* background-color: rgba(252, 242, 199, 0.6);  */
+    box-sizing: border-box;
+    padding: 85px 0px;
+    height: 210px;
+    margin-top: -216px;
+    border-radius: 10px;
+    transform: scale(1.02);
+}
+.section-1 a:hover img {
+    transform: scale(1.02);
+}

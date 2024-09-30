@@ -1,0 +1,160 @@
+/* css for user page (My Profile & My Appointment) */
+
+/* My Profile*/
+.prof-cont {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/myprofile.jpg);
+    height: 165vh;
+    display: grid;
+    /* align-items: center; */
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}  
+.prof-box {
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 65%;
+    /* max-width: 700px; */
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+    line-height: 1;
+}
+.prof-box h3 {
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin: 30px 0;
+    width: 100%;
+}
+.prof-box .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    margin: 20px 0 10px 0;
+}
+
+.prof-box .input-box { 
+    width: calc(100% / 2 - 60px);
+    margin-bottom: 20px;
+    padding: 0px 10px;
+}
+/* .input-box label,
+.address label,
+.gender label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+} */
+/* .input-box input,
+.address input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+} */
+/* form input::placeholder {
+    opacity: 1;
+    color: gray;
+    font-size: 12px;
+} */
+.prof-box input:hover, .prof-box input:focus{
+    border-bottom-color: #D4B05C;
+}
+.prof-box .address {
+    width: calc(100% - 60px);
+    margin-bottom: 40px;
+    padding: 0px 10px;
+}
+.box1 {
+    width: calc(100% - 500px);
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    margin: auto;
+} 
+.prof-box .submit, .prof-box .change {  
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #9C765D;
+    color: white;
+    border: none;
+    width: 200px;
+    padding: 15px;
+    margin-top: 45px;
+    border-radius: 250px; 
+    display: block;
+    margin: auto; 
+}
+.prof-box .submit:hover {
+    background-color: #D3C0AC;
+    cursor: pointer;
+}
+#message1, #message2 {
+    font-size: 13px;
+}
+.prof-box form input[type="email"] {
+    font-style: italic;
+}
+
+/* My Appointment */
+.conf-cont {
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+    width: 55%;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.1);
+}
+.no-record {
+    margin: auto;
+    height: 30vh;
+}
+.conf-box h2 {
+    margin-left: 20px;
+    color: white;
+}
+.conf-1, .conf-2 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 30px 0 30px 60px;
+}
+.conf-1 {
+    float: left;
+}
+.conf-2 {
+    float: right;
+}
+.conf-box {
+    background: #6FABD0;
+    background: #A7D2CB;
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid #063970;
+    border-bottom: 3px solid #6D9886;
+}  
+.no-record h2 {
+    text-align: center;
+}
+.cancel {
+    padding: 10px;
+    float: right;
+    margin-top: -50px;
+    border: none;
+    background: black;
+    /* color: #063970; */
+    color: white;
+    font-weight: 550;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.cancel:hover {
+    cursor: pointer;
+    /* border: 1px solid #063970; */
+    background: whitesmoke;
+    color: #063970;
+    color: #6D9886;
+}

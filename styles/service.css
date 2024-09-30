@@ -1,0 +1,109 @@
+/* css for Our Services page */
+
+/* Our Services (Main Page) */
+.service-row {
+    float:left;
+    width: 25%;
+    height: 420px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+#service1, #service2, #service3, #service4, #service5 {
+    box-sizing: border-box;
+    padding: 70px 50px;
+    color: #3A3B3C;
+}
+#service1 {
+    /* background-color:palevioletred; */
+    background-color: #F7A4A4;
+}
+#service2 {
+    background-color:skyblue;
+    /* background-color:#FFFBC1; */
+}
+#service3 {
+    /* background-color: #97D7CB; */
+    background-color: #B6E2A1;
+}
+#service4 {
+    /* background-color:coral; */
+    background-color: #FEBE8C;
+}
+#service5 {
+    background-color:lightsteelblue;
+}
+.service-btn {
+    margin-top: 10px;
+    padding: 10px 10px;
+    border: none;
+    color: #C00000;
+    font-weight: 550;
+}
+.service-btn:hover {
+    background: ghostwhite;
+    border: 1px solid #C00000;
+    cursor:pointer;
+}
+
+/* Service description page */
+.service-info .info {
+    width: 70%;
+    padding: 50px 40px 50px 200px;
+    text-align: justify;
+    box-sizing: border-box;
+    float: left;
+}
+.info ul {
+    list-style: square;
+    margin-left: 20px;
+}
+.info h1 {
+    color: #CA965C;
+}
+.info h1::before {
+    content: '';
+    position: absolute;
+    bottom: 155px;
+    background-color: #A11212;
+    height: 3px;
+    box-sizing: border-box;
+    width: 70px;
+} 
+.serviceMenu {
+    width: 30%;
+    float: right;
+    box-sizing: border-box;
+    padding: 80px 130px 130px 100px;
+    line-height: 1;
+}
+.serviceMenu ul {
+    display: block;
+    width: 100%;
+    background-color:whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    list-style: none;
+}
+.serviceMenu ul li {
+    padding: 20px 10px 20px 20px;
+}
+.serviceMenu ul li a{
+    color: #A11212; 
+    text-decoration: none;
+    text-align: left;
+}
+.serviceMenu h3{
+    margin-top: -5px;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 10px;
+    padding-bottom: 10px;
+} 
+.serviceMenu ul li:hover a {
+    color: #fff;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+}
+.serviceMenu ul li:hover {
+    background-color: rgba(188, 143, 143, 0.7);
+}
+

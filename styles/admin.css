@@ -1,0 +1,87 @@
+.infoAdmin {
+    width: 80%;
+    padding: 0 10px 50px 0;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+}
+.adminMenu {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px 30px 80px 40px;
+}
+.adminMenu ul {
+    display: block;
+    width: 100%;
+    background-color:whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    list-style: none;
+    margin-top: 10px;
+}
+.adminMenu ul li {
+    padding: 15px 10px 15px 20px;
+    transition: all 0.2s ease;
+}
+.adminMenu ul li a{
+    color: #A11212; 
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+.adminMenu h3{
+    margin-top: -5px;
+    margin-bottom: -10px;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 10px;
+    padding-bottom: 10px;
+} 
+.adminMenu ul li:hover a {
+    color: #fff;
+    color: #B73E3E;
+    font-weight: 600;
+    padding-left: 10px;
+}
+.adminMenu ul li:hover {
+    background-color: rgba(188, 143, 143, 0.7);
+    background-color: #fff;
+    border-left: 4px solid #A11212;
+}
+/* .adminMenu h3::before {
+    content: '';
+    position: absolute;
+    bottom: 500px;
+    background-color: #A11212;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+} */
+.infoAdmin a{
+    text-decoration: none;
+    color: #A11212;
+}
+.infoAdmin a:hover {
+    color: #896B60;
+}
+
+input[type=submit], .all-btn{
+    width: 100px;
+    background-color: #896B60;
+    color: white;
+    padding: 3px 0;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+}
+.all-btn {
+    float: right;
+    margin-top: -27px;
+    margin-right: 10px;
+}
+
+input[type=submit]:hover, .all-btn:hover {
+    background-color: #e45050;
+}
